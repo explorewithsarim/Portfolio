@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <script
@@ -23,6 +23,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
 
   <body class="bg-gradient-to-r from-[#0f172a] to-[#1e293b]">
@@ -80,7 +81,9 @@
         <p class="text-white text-4xl my-2">
           I'm <span class="text-orange-500 font-bold">Muhammad SARIM</span>
         </p>
-        <p class="text-white text-4xl my-2">Front-end Web Developer</p>
+        <span class="element class=text-white text-4xl my-2" id="element">
+          Front-end Web Developer
+        </span>
 
         <div class="flex flex-col items-center gap-6 mt-6">
           <a
@@ -107,7 +110,7 @@
             </a>
             <a
               href="
-https://www.instagram.com/not_yours_sarim/
+https://www.instagram.com/muhammad_sarim01/
 "
               target="_blank"
               class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black hover:bg-pink-500 hover:text-white transform hover:scale-110 transition duration-300"
@@ -226,14 +229,34 @@ https://www.instagram.com/not_yours_sarim/
           />
           <p class="text-xs sm:text-sm mt-1 text-white">JavaScript</p>
         </div>
+
         <div class="text-center w-20 sm:w-24">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/919/919851.png"
-            alt="React"
+            src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+            alt="Firebase"
             class="w-10 h-10 sm:w-12 sm:h-12 mx-auto transition-transform duration-300 hover:scale-110"
           />
-          <p class="text-xs sm:text-sm mt-1 text-white">React</p>
+          <p class="text-xs sm:text-sm mt-1 text-white">Firebase</p>
         </div>
+
+        <div class="text-center w-20 sm:w-24">
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/material-ui-1.svg"
+            alt="MUI"
+            class="w-10 h-10 sm:w-12 sm:h-12 mx-auto transition-transform duration-300 hover:scale-110"
+          />
+          <p class="text-xs sm:text-sm mt-1 text-white">MUI</p>
+        </div>
+
+        <div class="text-center w-20 sm:w-24">
+          <img
+            src="https://vitejs.dev/logo.svg"
+            alt="Vite"
+            class="w-10 h-10 sm:w-12 sm:h-12 mx-auto transition-transform duration-300 hover:scale-110"
+          />
+          <p class="text-xs sm:text-sm mt-1 text-white">Vite</p>
+        </div>
+
         <div class="text-center w-20 sm:w-24">
           <img
             src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png"
@@ -265,6 +288,39 @@ https://www.instagram.com/not_yours_sarim/
             class="w-10 h-10 sm:w-12 sm:h-12 mx-auto transition-transform duration-300 hover:scale-110"
           />
           <p class="text-xs sm:text-sm mt-1 text-white">GitHub</p>
+        </div>
+
+        <div class="text-center w-20 sm:w-24">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+            alt="Node.js"
+            class="w-12 h-12 sm:w-14 sm:h-14 mx-auto transition-transform duration-300 hover:scale-110"
+          />
+          <p class="text-sm sm:text-base mt-2 text-white font-semibold">
+            Node.js
+          </p>
+        </div>
+
+        <div class="text-center w-20 sm:w-24">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
+            alt="Express.js"
+            class="w-12 h-12 sm:w-14 sm:h-14 mx-auto transition-transform duration-300 hover:scale-110"
+          />
+          <p class="text-sm sm:text-base mt-2 text-white font-semibold">
+            Express.js
+          </p>
+        </div>
+
+        <div class="text-center w-20 sm:w-24">
+          <img
+            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+            alt="MongoDB"
+            class="w-12 h-12 sm:w-14 sm:h-14 mx-auto transition-transform duration-300 hover:scale-110"
+          />
+          <p class="text-sm sm:text-base mt-2 text-white font-semibold">
+            MongoDB
+          </p>
         </div>
       </div>
     </section>
@@ -515,13 +571,20 @@ https://www.instagram.com/not_yours_sarim/
             </div>
           </div>
         </div>
-
         <div
-          class="mt-10 pt-6 border-t border-[#444] text-center text-sm text-[#bbb]"
+          class="mt-10 pt-6 border-t border-[#444] text-center text-sm text-[#bbb] flex flex-col sm:flex-row justify-between items-center gap-4"
         >
-          &copy; 2025 Sarim's Portfolio | Designed with
-          <span class="text-red-500">❤️</span>
-          <button id="top" class="border-rounded-lg w-[4rem] h-[2rem]">↑ Top</button>
+          <span
+            >&copy; 2025 Sarim's Portfolio | Designed with
+            <span class="text-red-500">❤️</span></span
+          >
+
+          <button
+            id="top"
+            class="px-4 py-2 bg-yellow-400 text-[#0f172a] font-semibold rounded-lg hover:bg-yellow-500 transition transform hover:scale-105"
+          >
+            ↑ Top
+          </button>
         </div>
       </div>
     </footer>
@@ -533,5 +596,19 @@ https://www.instagram.com/not_yours_sarim/
       });
     </script>
     <script src="app.js"></script>
+
+    <script>
+      const topBtn = document.getElementById("top");
+      topBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+      var typed = new Typed("#element", {
+        strings: ["Front-end Web Developer", "UI/UX Designer"],
+        typeSpeed: 70,
+      });
+    </script>
   </body>
 </html>

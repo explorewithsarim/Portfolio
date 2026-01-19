@@ -72,3 +72,11 @@ button {
 
 
     }
+
+ .element,#element{
+
+    color:rgb(46, 36, 232);
+    font-style: bold
+    ;
+
+ }
